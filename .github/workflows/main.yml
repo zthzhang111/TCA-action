@@ -1,14 +1,15 @@
+name: 'TCA'
 on: [push]
 
 jobs:
   CodeAnalysis:
     runs-on: ubuntu-latest
-    name: code analysis
+    name: Tencent Cloud Code Analysis
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Tencent Cloud Code Analysis
-        uses: ./
+
+      - name: TCA
+        uses: zthzhang111/tca_action_demo
         with:
-          block: false
-          label: open_source_check
+          label: 'open_source_check'
