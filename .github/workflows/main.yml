@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: TCA
-        uses: zthzhang111/tca_action_demo@msater
+        uses: zthzhang111/tca_action_demo@v1.1
         with:
           label: 'open_source_check'
